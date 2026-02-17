@@ -1,0 +1,17 @@
+[package]
+name = "cachyos_web_app_manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk4 = { version = "0.9", features = ["v4_12"] }
+libadwaita = { version = "0.7", features = ["v1_6"] }
+anyhow = "1.0"
+dirs = "5.0"
+regex = "1.10" # Useful for sanitizing names
+execute = "0.2" # Simplify command execution
+log = "0.4"
+env_logger = "0.10"
+reqwest = { version = "0.11", features = ["blocking", "rustls-tls"] }
+scraper = "0.18"
+url = "2.5"
